@@ -1,0 +1,21 @@
+[project]
+name = "native-mm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=4.4.2",
+    "fastapi>=0.128.0",
+    "flax>=0.12.2",
+    "fsspec>=2025.10.0",
+    "jax[cuda13]>=0.8.2",
+    "lax>=1.0.0",
+    "matplotlib>=3.10.8",
+    "pillow>=12.1.0",
+    "tokenizers>=0.22.2",
+    "webdataset>=1.0.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
