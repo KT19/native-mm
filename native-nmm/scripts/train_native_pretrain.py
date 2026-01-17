@@ -111,10 +111,10 @@ def main() -> None:
     accum_steps = 4
     lr = 3e-4
     weight_decay = 0.1
-    total_steps = 10000
-    warmup_steps = 1000
-    save_every = 1000
-    ratio = 2  # i.e., text : mm = 2 : 1
+    total_steps = 20000
+    warmup_steps = 2000
+    save_every = 2000
+    ratio = 3  # i.e., text : mm = 3 : 1
     total_micro_steps = total_steps * accum_steps
 
     tok, st = load_tokenizer(tokenizer_path)

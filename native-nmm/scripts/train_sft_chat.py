@@ -103,7 +103,7 @@ def main() -> None:
     os.makedirs(sft_ckpt_dir, exist_ok=True)
     # -- hyper parameters --
     micro_batch_size = 8
-    accum_steps = 8
+    accum_steps = 4
     lr = 3e-5
     weight_decay = 0.1
     total_steps = 10000
@@ -145,7 +145,7 @@ def main() -> None:
     loss_acc = 0.0
     print("--- Start training ---")
     for step in range(1, total_micro_steps + 1):
-        is_mm = (step % 5) != 0  # weight mm
+        is_mm = (step % 3) != 0
         # --- make batch ---
         try:
             if is_mm:
