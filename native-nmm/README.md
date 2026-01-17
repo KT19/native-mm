@@ -72,3 +72,7 @@ Start a server backend for the chat interface.
 ```bash
 uv run scripts/server_chat.py
 ```
+
+## References
+![https://arxiv.org/abs/2509.23661](LLaVA-OneVision-1.5)
+![https://arxiv.org/abs/2504.07951](Scaling Laws for Native Multimodal Models)
