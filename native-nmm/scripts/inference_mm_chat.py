@@ -67,10 +67,9 @@ def main() -> None:
         raise RuntimeError(f"Failed to restore params from {ckpt_dir}.")
 
     user_texts = [
-        ["What do you think?", "Describe the image."],
-        ["Where is this place?", "Describe the image."],
-        ["How many people are there?", "Describe the image."],
-        ["What type of animals are there?", "Describe the image."],
+        ["What do you see?", "Describe the image."],
+        ["Where is this?", "Describe the image."],
+        ["What sports?", "Describe the image."],
     ]
 
     for i in range(len(user_texts)):
@@ -93,7 +92,7 @@ def main() -> None:
                 n_patches=n_patches,
                 max_text_len=config.max_text_len,
                 max_new_tokens=256,
-                temperature=0.95,
+                temperature=0.90,
                 top_k=50,
                 rng=jax.random.PRNGKey(42),
             )
@@ -102,7 +101,7 @@ def main() -> None:
             print("--" * 10)
     print("TEXT ONLY")
 
-    prompt = build_chat_prompt_text("What do you think about the future of AI?")
+    prompt = build_chat_prompt_text("The future of AI?")
     out = generate_text(
         params=params,
         model=model,
@@ -111,7 +110,7 @@ def main() -> None:
         prompt=prompt,
         max_text_len=config.max_text_len,
         max_new_tokens=256,
-        temperature=0.85,
+        temperature=0.90,
         top_k=50,
         rng=jax.random.PRNGKey(42),
     )
