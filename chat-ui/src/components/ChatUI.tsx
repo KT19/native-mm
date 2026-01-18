@@ -35,6 +35,10 @@ export default function ChatUI() {
     setMessages([]);
     setImage(null);
     setImagePreview(null);
+    // Reset file input so the same file can be uploaded again
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
   };
 
   const sendMessage = async () => {
