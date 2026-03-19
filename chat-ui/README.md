@@ -7,11 +7,13 @@ A modern, responsive web interface for interacting with the Native Multimodal Mo
 ### Installation
 
 1. Install dependencies:
+
    ```bash
    npm install
    ```
 
 2. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -20,10 +22,11 @@ A modern, responsive web interface for interacting with the Native Multimodal Mo
 
 ## 🔗 Connecting to the Backend
 
-The UI expects a running backend server from the `native-nmm` package. By default, it communicates with the local server scripts provided in the core repository.
+The UI expects a running backend server from the `native-mm` package. By default, it communicates with the local server scripts provided in the core repository.
 
 To start the backend server:
+
 ```bash
-cd ../native-nmm
+cd ../native-mm
 uv run scripts/server_chat.py
 ```

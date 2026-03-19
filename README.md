@@ -21,24 +21,25 @@ This project provides a full-stack solution for training and interacting with mu
 
 The repository is organized into two main components:
 
-| Component | Description |
-| :--- | :--- |
-| [**`native-nmm/`**](./native-nmm) | The core machine learning codebase (JAX models, training scripts, data loaders). |
-| [**`chat-ui/`**](./chat-ui) | The React-based frontend application for interacting with the model. |
+| Component                        | Description                                                                      |
+| :------------------------------- | :------------------------------------------------------------------------------- |
+| [**`native-nmm/`**](./native-mm) | The core machine learning codebase (JAX models, training scripts, data loaders). |
+| [**`chat-ui/`**](./chat-ui)      | The React-based frontend application for interacting with the model.             |
 
 ---
 
 ## Getting Started
 
-### 1. Backend Setup (`native-nmm/`)
+### 1. Backend Setup (`native-mm/`)
 
 ```bash
-cd native-nmm
+cd native-mm
 uv venv
 uv pip install .
 ```
 
-Refer to the [**`native-nmm` documentation**](./native-nmm/README.md) for detailed steps on:
+Refer to the [**`native-mm` documentation**](./native-mm/README.md) for detailed steps on:
+
 - Training your own tokenizer.
 - Preparing the LLaVA dataset.
 - Running Pretraining & SFT.
@@ -52,4 +53,4 @@ npm install
 npm run dev
 ```
 
-The UI will be available at `http://localhost:5173`. Make sure the backend server (from `native-nmm`) is running to enable chat functionality.
+The UI will be available at `http://localhost:5173`. Make sure the backend server (from `native-mm`) is running to enable chat functionality.
