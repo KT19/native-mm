@@ -21,10 +21,10 @@ This project provides a full-stack solution for training and interacting with mu
 
 The repository is organized into two main components:
 
-| Component                        | Description                                                                      |
-| :------------------------------- | :------------------------------------------------------------------------------- |
-| [**`native-nmm/`**](./native-mm) | The core machine learning codebase (JAX models, training scripts, data loaders). |
-| [**`chat-ui/`**](./chat-ui)      | The React-based frontend application for interacting with the model.             |
+| Component                       | Description                                                                      |
+| :------------------------------ | :------------------------------------------------------------------------------- |
+| [**`native-mm/`**](./native-mm) | The core machine learning codebase (JAX models, training scripts, data loaders). |
+| [**`chat-ui/`**](./chat-ui)     | The React-based frontend application for interacting with the model.             |
 
 ---
 
